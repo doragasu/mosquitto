@@ -20,7 +20,7 @@ Contributors:
 #include <stdio.h>
 #include <sys/types.h>
 
-#if defined(WITH_MEMORY_TRACKING) && defined(WITH_BROKER) && defined(__GLIBC__)
+#if defined(WITH_MEMORY_TRACKING) && defined(WITH_BROKER) && defined(__GLIBC__) && !defined(__UCLIBC__)
 #define REAL_WITH_MEMORY_TRACKING
 #endif
 
